@@ -63,6 +63,9 @@ print(result.score)             # confidence score 0.0-1.0
 # Detect from bytes
 result = m.identify_bytes(b"#!/usr/bin/env python3\nprint('hello')")
 print(result.output.ct_label)  # "python"
+
+# Tip: use a higher confidence threshold to reduce false positives
+# m = Magika(prediction_mode=MagikaPredictionMode.HIGH_CONFIDENCE)
 ```
 
 ## Supported File Types
