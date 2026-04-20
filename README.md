@@ -120,8 +120,12 @@ Contributions are welcome! Please read our contributing guidelines and check exi
 
 When reporting misdetections, please use the [misdetection issue template](.github/ISSUE_TEMPLATE/misdetection.md).
 
+## Notes
+
+> **Personal fork** — I'm using this primarily to experiment with the Python API for a file classification side project. The upstream repo is the authoritative source; I may occasionally rebase onto it.
+
 ## License
 
 Apache 2.0 — see [LICENSE](LICENSE) for details.
 
-This project is a fork of [google/magika](https://github.com/google/magika), maintained independently.
+This project is 
