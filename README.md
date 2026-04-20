@@ -68,6 +68,12 @@ print(result.output.ct_label)  # "python"
 # Results below the confidence threshold fall back to a generic content-type label
 from magika.types import MagikaPredictionMode
 m = Magika(prediction_mode=MagikaPredictionMode.HIGH_CONFIDENCE)
+
+# Batch identify multiple files at once (more efficient than calling identify_path in a loop)
+from pathlib import Path
+results = m.identify_paths([Path("file1.py"), Path("file2.js"), Path("file3.bin")])
+for path, result in zip(["file1.py", "file2.js", "file3.bin"], results):
+    print(f"{path}: {result.output.ct_label} ({result.score:.2f})")
 ```
 
 ## Supported File Types
@@ -122,10 +128,4 @@ When reporting misdetections, please use the [misdetection issue template](.gith
 
 ## Notes
 
-> **Personal fork** — I'm using this primarily to experiment with the Python API for a file classification side project. The upstream repo is the authoritative source; I may occasionally rebase onto it.
-
-## License
-
-Apache 2.0 — see [LICENSE](LICENSE) for details.
-
-This project is 
+> **Personal fork** — I'm using this primarily to experiment with the Python API and batch file processing workflows. Not intended for production use.
