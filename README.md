@@ -117,15 +117,9 @@ pytest tests/
 docker build -t magika .
 
 # Run container
-docker run --rm -v $(pwd):/data magika /data/yourfile
+docker run --rm -v $(pwd):/data magika /data/y
 ```
-
-## Contributing
-
-Contributions are welcome! Please read our contributing guidelines and check existing issues before opening a new one.
-
-When reporting misdetections, please use the [misdetection issue template](.github/ISSUE_TEMPLATE/misdetection.md).
 
 ## Notes
 
-> **Personal fork** — I'm using this primarily to experiment with the Python API and batch file processing workflows. Not intended for production use.
+Personal fork used for learning and experimenting with the model internals. The upstream project is actively maintained — check [google/magika](https://github.com/google/magika) for the latest updates and releases.
