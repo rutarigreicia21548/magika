@@ -122,4 +122,4 @@ docker run --rm -v $(pwd):/data magika /data/y
 
 ## Notes
 
-Personal fork used for learning and experimenting with the model internals. The upstream project is actively maintained — check [google/magika](https://github.com/google/magika) for the latest updates and releases.
+I forked this primarily to experiment with the Python API for a file classification pipeline. The `HIGH_CONFIDENCE` prediction mode works well for my use case — I haven't needed to tweak anything yet, but keeping this fork around for easy reference and potential patches.
