@@ -122,4 +122,4 @@ docker run --rm -v $(pwd):/data magika /data/y
 
 ## Notes
 
-I forked this primarily to experiment with the Python API for a file classification pipeline. The `HIGH_CONFIDENCE` prediction mode works well for my use case — I haven't needed to tweak anything yet, but keeping this fork around for easy reference and potential patches.
+I forked this primarily to experiment with the Python API for a file-sorting side project. The upstream repo is actively maintained — check there for the latest model updates and bug fixes.
