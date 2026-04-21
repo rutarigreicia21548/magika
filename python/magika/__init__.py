@@ -24,6 +24,14 @@ Basic usage:
     >>> result = m.identify_bytes(b"# Hello World")
     >>> print(result.output.label)
     markdown
+
+Batch usage:
+    >>> from magika import Magika
+    >>> from pathlib import Path
+    >>> m = Magika()
+    >>> results = m.identify_paths([Path("file1.py"), Path("file2.js")])
+    >>> for r in results:
+    ...     print(r.path, r.output.label)
 """
 
 from magika.magika import Magika
