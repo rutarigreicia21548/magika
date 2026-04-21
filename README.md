@@ -122,4 +122,4 @@ docker run --rm -v $(pwd):/data magika /data/y
 
 ## Notes
 
-I forked this primarily to experiment with the Python API for a file-sorting side project. The upstream repo is actively maintained — check there for the latest model updates and bug fixes.
+Personal fork for learning purposes. I primarily use this for quickly identifying mystery files in CTF challenges and auditing uploaded files in side projects. The `HIGH_CONFIDENCE` prediction mode is what I default to in any code I write with this.
