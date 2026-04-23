@@ -32,6 +32,9 @@ Batch usage:
     >>> results = m.identify_paths([Path("file1.py"), Path("file2.js")])
     >>> for r in results:
     ...     print(r.path, r.output.label)
+
+Note: See magika.types for MagikaResult and related types used in the
+return values of identify_bytes(), identify_path(), and identify_paths().
 """
 
 from magika.magika import Magika
