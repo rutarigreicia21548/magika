@@ -122,4 +122,4 @@ docker run --rm -v $(pwd):/data magika /data/y
 
 ## Notes
 
-Personal fork used for experimenting with file type detection in a small pipeline project. The upstream repo is actively maintained — check [google/magika](https://github.com/google/magika) for the latest updates before pulling changes here.
+Personal fork used for learning and experimentation. For production use, refer to the [upstream repository](https://github.com/google/magika) which receives active maintenance and model updates.
