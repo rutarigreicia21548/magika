@@ -35,6 +35,9 @@ Batch usage:
 
 Note: See magika.types for MagikaResult and related types used in the
 return values of identify_bytes(), identify_path(), and identify_paths().
+
+For a full list of supported content types, see:
+https://github.com/google/magika/blob/main/docs/supported-content-types.md
 """
 
 from magika.magika import Magika
