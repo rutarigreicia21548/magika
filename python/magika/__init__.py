@@ -38,6 +38,11 @@ return values of identify_bytes(), identify_path(), and identify_paths().
 
 For a full list of supported content types, see:
 https://github.com/google/magika/blob/main/docs/supported-content-types.md
+
+Personal fork notes:
+    - Tracking upstream: google/magika
+    - Added ContentType and MagikaError to public exports for easier access
+      when building scripts that need to handle errors or check specific types.
 """
 
 from magika.magika import Magika
@@ -49,6 +54,7 @@ from magika.types import (
     ModelOutput,
     ModelOutputFields,
     PredictionMode,
+    MagikaError,
 )
 
 __version__ = "0.6.0"
@@ -60,6 +66,7 @@ __all__ = [
     "MagikaResult",
     "MagikaOutputBody",
     "MagikaPrediction",
+    "MagikaError",
     "ModelFeatures",
     "ModelOutput",
     "ModelOutputFields",
